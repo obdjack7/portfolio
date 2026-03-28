@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body
+
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="veille.html">Veille</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="epreuve.html" class="active">Épreuves</a></li>
+        </ul>
+    </nav>
+
+    <!-- TITRE -->
+    <h1>Épreuves BTS SIO</h1>
+
+    <!-- SECTION E5 -->
+    <section>
+        <h2>Épreuve E5 – Support et mise à disposition de services informatiques</h2>
+
+        <p>
+            Cette page présente les épreuves réalisés durant ma formation BTS SIO.
+        </p>
+<section>
+    <h2>Épreuve E4 – Tableau de compétences</h2>
+
+    <p>
+        Le document ci-dessous présente le tableau de synthèse des compétences
+        acquises durant le BTS SIO.
+    </p>
+
+    <a href="documents/Tableau_E4_DJACK_modifie.xlsx" download>
+        Télécharger le tableau E4 (Excel)
+    </a>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Portfolio BTS SIO – © 2026</p>
+    </footer>
+
+</body>
+</html>

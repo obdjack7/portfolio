@@ -1,0 +1,326 @@
+
+
+/* ============================= */
+/* IMPORT POLICES GOOGLE FONTS */
+/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* ============================= */
+/* STYLE GLOBAL DU SITE */
+/* ============================= */
+body {
+    font-family: "Inter", sans-serif;
+    background-image: url("../images/fond.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #6d43a8;
+    color: #0f0f3d;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* MENU DE NAVIGATION */
+/* ============================= */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: grey;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #555;
+}
+
+/* ============================= */
+/* SECTIONS PORTFOLIO */
+/* ============================= */
+section {
+    background-color: rgba(184, 140, 209, 0.8); /* #b88cd1 */
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-weight: 500;
+    color: #111;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ============================= */
+/* TITRES */
+/* ============================= */
+h1, h2, h3 {
+    font-family: "Bodoni Moda", serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 15px;
+    background-color: #1e1e2f;
+    color: white;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #38bdf8;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* ============================= */
+/* PARAGRAPHES ET LISTES */
+/* ============================= */
+p {
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+li {
+    color: #0f172a;
+    font-family: "Bodoni Moda", serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.6rem;
+}
+
+/* ============================= */
+/* TABLEAUX PROJETS */
+/* ============================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/* ============================= */
+/* MINI ONGLET SCROLLABLE COMPÉTENCES */
+/* ============================= */
+.skills-box, .experience-box {
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.skills-box {
+    max-height: 350px;
+}
+
+.experience-box {
+    max-height: 300px;
+}
+
+.skills-box ul, .experience-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-box ul ul, .experience-box ul ul {
+    list-style-type: circle;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* ============================= */
+/* ONGLET LATÉRAL DÉPLIABLE */
+/* ============================= */
+#toggle-side-panel {
+    display: none;
+}
+
+.side-tab {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 12px 8px;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: bold;
+    border-radius: 8px 0 0 8px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.side-tab:hover {
+    background-color: #444;
+}
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 320px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.97);
+    box-shadow: -4px 0 12px rgba(0,0,0,0.25);
+    padding: 25px;
+    overflow-y: auto;
+    transition: right 0.35s ease;
+    z-index: 999;
+}
+
+#toggle-side-panel:checked + .side-tab + .side-panel {
+    right: 0;
+}
+
+.side-panel h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.side-panel h4 {
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.side-panel p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.side-panel ul {
+    padding-left: 20px;
+}
+
+.side-panel li {
+    margin-bottom: 8px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e1e2f;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ============================= */
+/* LIENS */
+/* ============================= */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+/* ============================= */
+/* VEILLE : ONGLET DOUBLE */
+/* ============================= */
+
+.veille-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.veille-box {
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    max-height: 320px;   /* hauteur fixe */
+    overflow-y: auto;    /* scroll vertical */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.veille-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.veille-box ul {
+    padding-left: 20px;
+}
+
+.veille-box li {
+    margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+    .veille-container {
+        flex-direction: column;
+    }
+
+    .veille-box {
+        width: 100%;
+    }
+}
+.img-presentation {
+  width: 300px;
+  height: auto;
+}

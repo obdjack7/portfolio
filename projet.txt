@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet professionnel - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="projet.html">Projet et entrepreises</a></li>
+	<li><a href="cv.html">CV</a></li>
+	<li><a href="epreuve.html">Epreuve</a></li>
+
+    </ul>
+</nav>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+     	table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            background-color: #f4f4f4;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mes projets BTS SIO</h1>
+</header>
+
+<section>
+    <h2>Projet 1 : Supervision avec Zabbix</h2>
+    <table>
+        <tr>
+            <th>Objectifs</th>
+            <td>
+                <ul>
+                    <li>Installer et configurer un serveur Zabbix</li>
+                    <li>Surveiller plusieurs services critiques</li>
+                    <li>Créer dashboards et alertes automatisées</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Actions réalisées</th>
+            <td>
+                <ul>
+                    <li>Installation de Zabbix Server sur Debian 12</li>
+                    <li>Configuration des agents Zabbix sur les machines cibles</li>
+                    <li>Mise en place d’alertes email pour CPU, mémoire et disque</li>
+                    <li>Création d’un dashboard centralisé pour suivi temps réel</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Résultats</th>
+            <td>
+                <ul>
+                    <li>100 % de disponibilité des services surveillés pendant 1 mois</li>
+                    <li>Détection automatique de plusieurs anomalies système</li>
+                    <li>Documentation complète du processus d’installation</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Technologies utilisées</th>
+            <td>Zabbix 6.x, Debian Linux, MySQL, PHP, SMTP</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Projet 2 : Virtualisation avec Proxmox VE</h2>
+    <table>
+        <tr>
+            <th>Objectifs</th>
+            <td>
+                <ul>
+                    <li>Installer et configurer Proxmox VE</li>
+                    <li>Déployer des machines virtuelles Linux et Windows</li>
+                    <li>Gérer stockage, snapshots et réseaux virtuels</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Actions réalisées</th>
+            <td>
+                <ul>
+                    <li>Installation de Proxmox VE sur serveur physique</li>
+                    <li>Création et configuration de plusieurs VM</li>
+                    <li>Configuration de réseaux virtuels</li>
+                    <li>Tests de sauvegarde/restauration via snapshots</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Résultats</th>
+            <td>
+                <ul>
+                    <li>Infrastructure virtuelle stable et opérationnelle</li>
+                    <li>Gestion de plusieurs VM et services simultanément</li>
+                    <li>Documentation et plan de sauvegarde mis en place</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Technologies utilisées</th>
+            <td>Proxmox VE, Debian Linux, Windows Server, réseaux virtuels</td>
+        </tr>
+    </table>
+</section>
+
+    <h1>Mes Entreprises</h1>
+
+
+<section>
+	<h2>Save</h2>
+	<p>GROUPE SAVE est une SASU basée à Paris, active dans le commerce de gros de composants et équipements électroniques (vidéosurveillance, contrôle d’accès, protection, énergies renouvelables). L’entreprise compte 10 à 19 salariés et un capital de 100 948 €, mais elle est actuellement en liquidation judiciaire depuis février 2025.</p>
+	<h2>Distransport</h2>
+	<p>DIS TRANSPORT est une SASU créée en 2017, immatriculée au RCS de Versailles et implantée à Guyancourt (Yvelines). L’entreprise exerce dans le transport routier de marchandises de proximité, principalement avec des véhicules de moins de 3,5 tonnes, et propose également des services de location de véhicules. Dirigée par Waly Diarra, elle compte 6 à 9 salariés, ce qui en fait une petite PME du secteur des transports terrestres.</p>
+	<img src="distransport.jpg>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 - Portfolio BTS SIO</p>
+</footer>
+
+</body>
+</html>

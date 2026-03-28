@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Veille - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="projet.html">Projet et entrepreises</a></li>
+	<li><a href="cv.html">CV</a></li>
+	<li><a href="epreuve.html">Epreuve</a></li>
+
+    </ul>
+</nav>
+
+<h1>Veille</h1>
+<section class="veille-section">
+    <h2>Veille technologique et juridique</h2>
+
+    <div class="veille-container">
+	
+
+        <!-- Veille juridique -->
+        <div class="veille-box">
+            <h3>Veille juridique</h3>
+            <p>
+                La veille juridique permet de suivre les évolutions légales
+                liées à l’informatique et à la protection des données.
+            </p>
+            <ul>
+                <li>Protection des données personnelles (RGPD)</li>
+                <li>Sécurité des systèmes d’information</li>
+                <li>Respect des licences logicielles</li>
+                <li>Responsabilité en cas d’incident</li>
+            </ul>
+        </div>
+
+        <!-- Veille informationnelle -->
+        <div class="veille-box">
+            <h3>Veille informationnelle</h3>
+            <p>
+                La veille informationnelle consiste à suivre les évolutions
+                technologiques et les tendances du secteur informatique.
+            </p>
+            <ul>
+                <li>Cybersécurité et nouvelles menaces</li>
+                <li>Virtualisation et cloud</li>
+                <li>Supervision des systèmes et réseaux</li>
+                <li>Évolution des métiers de l’informatique</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 - Portfolio BTS SIO</p>
+</footer>
+
+</body>
+</html>
